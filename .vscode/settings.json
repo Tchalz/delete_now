@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "C:\\Users\\CHIBUZOR\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "scssLint.showHighlights": true,
+    "files.autoGuessEncoding": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
