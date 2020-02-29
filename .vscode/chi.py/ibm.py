@@ -85,8 +85,6 @@
 #     print("it is hot")
 
 
-
-
 # is_water = input("Is water available (True or False)?")
 
 # if is_water == "True":
@@ -112,10 +110,10 @@
 #     print("I will not purchase this drink")
 #     if is_soda == False:
 #         print("Soda is not available")
-		
+
 #     if have_money == False:
 #         print("I do not have money")
-		
+
 #     if is_thirsty == False:
 #         print("I am not thirsty")
 
@@ -139,7 +137,6 @@
 
 # else:
 #     print("The number is not positive")
-
 
 
 # fever = False
@@ -188,21 +185,20 @@
 # print(all(symbol in string.punctuation for symbol in symbols_and_non_symbols))     # False
 
 
-
 # string = "1983chiboy"     # Change the string text between the quotation marks to see what the program does
 
 # if string.isspace():
 #     print("only white spaces")
-	
+
 # elif string.isalpha():
 #     print("only letters")
-	
+
 # elif string.isdigit():
 #     print("only digits")
-	
+
 # elif string.isalnum():
 #     print("digits and letters")
-	
+
 # else:
 #     print("digits, letters, and/or symbols")
 
@@ -315,10 +311,6 @@
 # print(lst4 is lst1)    #whereas lst3 and lst4, although they have the exact same values, they point to copies of the object. Basically, they are different list objects but have the same values stored in the collection.
 
 
-
-
-
-
 # prime_numbers = []
 # for i in range(1, 10, 2):
 #     prime_numbers.append(i)
@@ -382,7 +374,7 @@
 # print(nested_list[2] is nested_list_copy[2])
 
 # Mutate those lists to make sure changes to one do not affect the other
-#print("Mutating the lists\n")
+# print("Mutating the lists\n")
 # nested_list[0][0] = 10
 # nested_list[0][1] = 20
 # nested_list[0][2] = 30
@@ -398,14 +390,14 @@
 # while x <= 100:
 #     print(x)
 #     if x == 95:
-#         break 
+#         break
 #     x += 5
-    
+
 # x = 5
 # while x <= 100:
-#     print(x) 
+#     print(x)
 #     x += 5
-    
+
 
 # i = 0
 # while i < 6:
@@ -430,7 +422,7 @@
 
 # while guess != num:
 #     guess = int(input("Wrong guess. Try again!"))
-	
+
 # print("You guessed it correctly!")
 
 
@@ -446,7 +438,7 @@
 
 # for x in adj:
 #   for y in fruits:
-#     print(x, y) 
+#     print(x, y)
 
 # string = "CHARACTERIZATION"
 # for char in string:
@@ -458,83 +450,276 @@
 #     print(drink, end = ", ")
 
 
+# Python program to
+# print Diamond shape
 
-# Python program to 
-# print Diamond shape 
-
-# Function to print 
-# Diamond shape 
-# def Diamond(rows): 
+# Function to print
+# Diamond shape
+# def Diamond(rows):
 # 	n = 0
-# 	for i in range(1, rows + 1): 
-# 		# loop to print spaces 
-# 		for j in range (1, (rows - i) + 1): 
-# 			print(end = " ") 
-		
-# 		# loop to print star 
-# 		while n != (2 * i - 1): 
-# 			print("*", end = "") 
+# 	for i in range(1, rows + 1):
+# 		# loop to print spaces
+# 		for j in range (1, (rows - i) + 1):
+# 			print(end = " ")
+
+# 		# loop to print star
+# 		while n != (2 * i - 1):
+# 			print("*", end = "")
 # 			n = n + 1
 # 		n = 0
-		
-# 		# line break 
-# 		print() 
+
+# 		# line break
+# 		print()
 
 # 	k = 1
 # 	n = 1
-# 	for i in range(1, rows): 
-# 		# loop to print spaces 
-# 		for j in range (1, k + 1): 
-# 			print(end = " ") 
+# 	for i in range(1, rows):
+# 		# loop to print spaces
+# 		for j in range (1, k + 1):
+# 			print(end = " ")
 # 		k = k + 1
-		
-# 		# loop to print star 
-# 		while n <= (2 * (rows - i) - 1): 
-# 			print("*", end = "") 
+
+# 		# loop to print star
+# 		while n <= (2 * (rows - i) - 1):
+# 			print("*", end = "")
 # 			n = n + 1
 # 		n = 1
-# 		print() 
+# 		print()
 
-# #Driver Code 
-# #number of rows input 
+# #Driver Code
+# #number of rows input
 # rows = 5
-# Diamond(rows) 
+# Diamond(rows)
 
-# Program to print the given pattern 
-# def print_asterisk(asterisk): 
-# 	if (asterisk == 0): 
-# 		return; 
-# 	print("* ", end = ""); 
-# 	print_asterisk(asterisk - 1); 
+# Program to print the given pattern
+# def print_asterisk(asterisk):
+# 	if (asterisk == 0):
+# 		return;
+# 	print("* ", end = "");
+# 	print_asterisk(asterisk - 1);
 
-# def print_space(space): 
-# 	if (space == 0): 
-# 		return; 
-# 	print(" ", end = ""); 
-# 	print(" ", end = ""); 
-# 	print_space(space - 1); 
+# def print_space(space):
+# 	if (space == 0):
+# 		return;
+# 	print(" ", end = "");
+# 	print(" ", end = "");
+# 	print_space(space - 1);
 
-# # function to print the pattern 
-# def pattern(n, num): 
-	
-# 	# base case 
-# 	if (n == 0): 
-# 		return; 
-# 	print_asterisk(n); 
-# 	print_space(2 * (num - n) + 1); 
-# 	print_asterisk(n); 
-# 	print(""); 
+# # function to print the pattern
+# def pattern(n, num):
 
-# 	# recursively calling pattern() 
-# 	pattern(n - 1, num); 
+# 	# base case
+# 	if (n == 0):
+# 		return;
+# 	print_asterisk(n);
+# 	print_space(2 * (num - n) + 1);
+# 	print_asterisk(n);
+# 	print("");
 
-# # Driver Code 
-# if __name__ == '__main__': 
-# 	n = 5; 
-# 	pattern(n, n); 
+# 	# recursively calling pattern()
+# 	pattern(n - 1, num);
 
-# # This code is contributed by Princi Singh 
-for i in range(1, 20, 2):
-    print(i, end = " ")
-    if i == 15:
-        break       
+# # Driver Code
+# if __name__ == '__main__':
+# 	n = 5;
+# 	pattern(n, n);
+
+# # This code is contributed by Princi Singh
+# for i in range(1, 20, 2):
+#     print(i, end = " ")
+#     if i == 15:
+#         break
+
+# nested_list1 = [[2, 4, 12], ["A", "B", "C"], [6.5, 4.2, 10.0]]
+# nested_list2 = nested_list1[:]
+# nested_list2 = nested_list1.copy()
+
+# nested_list1 = [[2, 4, 12], ["A", "B", "C"], [6.5, 4.2, 10.0]]
+# print(nested_list2 is nested_list1)          # False
+# #print(nested_list3 is nested_list1)          # False
+
+# print('\nChecking the first nested list: [2, 4, 12]')
+# print(nested_list2[0] is nested_list1[0])    # True
+# print(nested_list3[0] is nested_list1[0])    # True
+
+# print('\nChecking the second nested list: ["A", "B", "C"]')
+# print(nested_list2[1] is nested_list1[1])    # True
+# print(nested_list3[1] is nested_list1[1])    # True
+
+# print('\nChecking the third nested list: [6.5, 4.2, 10.0]\n')
+# print(nested_list2[2] is nested_list1[2])    # True
+# print(nested_list3[2] is nested_list1[2])    # True
+
+
+# beverages = ["water", "juice", "soda", "tea", "coffee"]
+
+# for i in range(len(beverages)):
+#     print(beverages[i])
+
+
+# int_list = []
+# for i in range(10, 100, 5):
+#     int_list.append(i)
+# print(int_list)
+
+
+# int_list = [2,3,5,7,8,9,5,3,2,1,0]
+
+# for i in range(len(int_list)):
+#     int_list[i] += 2
+
+# print(int_list)
+
+# int_list = [1, 2, 3, 4, 5]
+# for num in int_list:
+#     int_list.append(num)
+#     print(num)
+
+# beverages = ["water", "juice", "soda", "tea", "coffee"]
+
+# if "soda" in beverages:
+#     print("I will purchase soda.")
+# else:
+#     print("Soda is not available.")
+
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# if 4 not in numbers:
+#     print(500)
+# else:
+#     print(15000)
+
+
+# n = 20
+# for i in range(n):
+#     print(n * "*")
+
+# tup = (1, 1, 1, "a", "a", "b")
+# print(tup.index(1))
+# print(tup.index("a"))
+# print(tup.index("b"))
+
+# you = {"pominos", "pizza no. 1", "pineapples don't belong"} 
+# friend1 = {"pominos", "pizza fusion", "father johns"} 
+# friend2 = {"pizza no. 1", "fresh slice", "father johns"} 
+
+# available_options = you | friend1 | friend2 
+# available_options2 = you.union(friend1, friend2) 
+
+# print(available_options) 
+# print(available_options2)
+
+string = "elongations" 
+tup = (1, 1, 1, 'a', 'a')
+nset = {1, 2, 3, 'a', 'b'}
+fset = frozenset(nset)
+
+# print(list(string))      # str to list
+# print(list(tup))         # tuple to list 
+# print(list(nset))        # set to list 
+# print(list(fset))        # frozenset to list
+
+
+# beverages = { } 
+# beverages["water"] = 1.25 
+# beverages["soda"] = 1.25 
+# beverages["tea"] = 1.50 
+# beverages["juice"] = 1.75 
+# beverages["coffee"] = 1.00 
+# print(beverages)
+
+# beverages = {"water": 1.25, "soda": 1.25, "tea": 1.5, "juice": 1.75, "coffee": 1.0}
+
+# for drink in beverages:    
+#     print(drink)
+
+# beverages = {"water": 1.25, "soda": 1.25, "tea": 1.5, "juice": 1.75, "coffee": 1.0}
+
+# for drink in beverages:     
+#     print(beverages[drink])
+
+
+# beverages = {"water": 1.25, "soda": 1.25, "tea": 1.5, "juice": 1.75, "coffee": 1.0} 
+
+# for drink in beverages:     
+#     print(drink, beverages[drink])
+
+
+
+# beverages = {"water": 1.25, "soda": 1.25, "tea": 1.5, "juice": 1.75, "coffee": 1.0} 
+# print(beverages.keys())
+
+
+# beverages = {"water": 1.25, "soda": 1.25, "tea": 1.5, "juice": 1.75, "coffee": 1.0}
+
+# for drink in beverages:     
+#     beverages[drink] *= 0.5 
+#     print(beverages)
+
+
+# for i in range(1, 10, 2):
+#     print(i)
+
+# def intro(): 
+# 	print("Hello World!, Welcome to Python Programming")
+# intro()
+
+
+# def two_returns():
+#     return [50, 50, 50, 50, 50]
+#     return [1, 2, 3, 4, 5]
+
+# print(two_returns())
+
+
+
+
+# lst1 = [1, 2, 3, 4, 5]
+# lst2 = ["a", "b", "c", "d", "e"]
+
+# def multiply_2(lst):
+#     for i in range(len(lst)):
+#         lst[i] *= 2
+#     return lst
+
+# print(multiply_2(lst1))
+# print(multiply_2(lst2))
+
+
+# n = int(input("please enter a number: "))
+# print("the number has two digits")
+# if n>0:
+#      print("the number is positive")
+# if n%2 == 0:
+#      print("the number is even")
+# elif n == 50:
+#      print("the number is 50")
+# else:
+#      print("the number is not even")
+
+
+# lst1 = [1, 2, 4, 4, 2, 4]
+# lst2 = [2, 3, 3, 1]
+# set1 = set(lst1)
+# set2 = set(lst2)
+# print(set1 & set2)
+
+# lst = [2*i for i in range(15) if i%3 == 0]
+# print(lst)
+
+
+# empty = { }
+# print(type(empty))
+
+# num = 0
+# for i in range(2, 14, 3):
+#      for j in range(3,5):
+#           num += j
+# print(num)
+
+lst1 = [1, 2, 4, 4, 2, 4]
+lst2 = [2, 3, 3, 1]
+set1 = set(lst1)
+set2 = set(lst2)
+print(set1 | set2)
+
